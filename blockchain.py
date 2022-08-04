@@ -1,10 +1,10 @@
-#Importing the libraries
+# Importing the libraries
 import datetime
 import hashlib
 import json
 from flask import Flask, jsonify
 
-#Building a blockchain
+# Building a blockchain
 
 class Blockchain:
     
@@ -53,6 +53,16 @@ class Blockchain:
                 previous_block = block
                 block_index += 1
              return True   
+         
+            
+# Mining our Blockchain
+
+# Creating a Web App
+app = Flask(__name__)
+
+# Creating a Blockchain
+blockchain = Blockchain()    
+         
             
                     
                     
